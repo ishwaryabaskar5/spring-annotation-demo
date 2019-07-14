@@ -4,7 +4,7 @@
 
 
 Task 1:
-Create a Maven project and add required dependency of spring-context 5.1.4.RELEASE
+Create a Maven project and add required dependency of spring-context 5.1.4.RELaEASE
 Create a Main class in package com.stackroute and two Spring Beans – Movie, and Actor in
 package com.stackroute.domain.
 Actor has two String properties, name and gender, and an age property of type int.
@@ -54,5 +54,14 @@ Create another Movie bean and try autowire byType.
 Run the application and note the exception thrown.
 Fix the Movie bean by removing autowire byType and using constructor injection instead.
 Push the code to autowire-xml branch.
+
+-------------------------------------------------------------------------------------------------
+
+Task 4:
+From the autowire-xml branch of spring-xml-demo repo create an aware-interface
+branch.
+Implement ApplicationContextAware, BeanFactoryAware, BeanNameAware in the
+Movie class and print out their results.
+Push the code to aware-interface branch.
 
 -------------------------------------------------------------------------------------------------

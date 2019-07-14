@@ -1,5 +1,6 @@
 package com.stackroute.domain;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,7 +13,12 @@ public class ConfigClass {
 
 	@Bean
 	public Movie movieObj (){
-		return new Movie();
+		return new Movie(actor());
+	}
+	
+	@Bean
+	public Movie movieObj1 (){
+		return new Movie(actorObj());
 	}
 	
 	@Bean
