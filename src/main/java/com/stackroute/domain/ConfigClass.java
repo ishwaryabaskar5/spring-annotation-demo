@@ -21,9 +21,9 @@ public class ConfigClass {
 		return new Actor("sivakarthikeyan","male",30);
 	}
 	
-	@Bean(initMethod = "customInit", destroyMethod = "customDestroy")
-	public BeanLifecycleDemoBean beanLifeCycle() {
-		return new BeanLifecycleDemoBean();
+	@Bean
+	public BeanPostProcessorDemoBean beanPostProcessorDemo(){
+		return new BeanPostProcessorDemoBean();
 	}
 	
 }
