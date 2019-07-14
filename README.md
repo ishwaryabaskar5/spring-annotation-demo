@@ -1,4 +1,7 @@
-Spring Fundamentals with Annotations
+                    ***Spring Fundamentals with Annotations***
+
+-----------------------------------------------------------------------------------------------------
+
 Task 1:
 Create a Maven project and add required dependency of spring-context 5.1.4.RELEASE
 Create a Main class in package com.stackroute and two Spring Beans – Movie, and Actor in
@@ -13,3 +16,5 @@ The Main class looks up Movie bean via three ways to print out actor information
 2. Using Spring 3.2 BeanDefinitionRegistry and BeanDefinitionReader
 3. Using ApplicationContext
 Create a spring-xml-demo repo and push the code to master branch.
+
+-----------------------------------------------------------------------------------------------------
