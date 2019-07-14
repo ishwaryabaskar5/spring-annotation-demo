@@ -8,7 +8,9 @@ public class ConfigClass {
 	
 	@Bean
 	public Movie movieBean (){
-		return new Movie(actorBean());
+		Movie movie = new Movie();
+		movie.setActor(actorBean());
+		return movie;
 	}
 	
 	@Bean
