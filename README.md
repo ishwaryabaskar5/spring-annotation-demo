@@ -4,7 +4,7 @@
 
 
 Task 1:
-Create a Maven project and add required dependency of spring-context 5.1.4.RELaEASE
+Create a Maven project and add required dependency of spring-context 5.1.4.RELEASE
 Create a Main class in package com.stackroute and two Spring Beans – Movie, and Actor in
 package com.stackroute.domain.
 Actor has two String properties, name and gender, and an age property of type int.
@@ -63,5 +63,22 @@ branch.
 Implement ApplicationContextAware, BeanFactoryAware, BeanNameAware in the
 Movie class and print out their results.
 Push the code to aware-interface branch.
+
+-------------------------------------------------------------------------------------------------
+
+Task 5:
+From the aware-interface branch of spring-xml-demo repo create a bean-lifecycle
+branch.
+Add a BeanLifecycleDemoBean class in com.stackroute.demo that implements
+InitializingBean and DisposableBean.
+Override the required methods to print out messages.
+Define BeanLifecycleDemoBean as a bean in beans.xml.
+Run the application and observe the result.
+Add two methods customInit() and customDestroy() to the BeanLifecycleDemoBean
+class and print out custom messages.
+In the BeanLifecycleDemoBean bean definition, in beans.xml, set the customInit()
+and customDestroy() methods to be called.
+Run the application.
+Push the code to bean-lifecycle branch.
 
 -------------------------------------------------------------------------------------------------
