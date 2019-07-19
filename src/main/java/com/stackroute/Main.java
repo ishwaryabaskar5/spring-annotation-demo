@@ -16,6 +16,7 @@ import org.springframework.core.io.FileSystemResource;
 public class Main {
 	public static void main( String[] args )
 	{
+//		applicationContext container object
 		ApplicationContext context = new AnnotationConfigApplicationContext("com.stackroute.domain");
 
 		Movie movie = context.getBean("movieObj",Movie.class);

@@ -8,13 +8,13 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class ConfigClass {
 
-//	Movie Beans
-
+//	Movie Bean
 	@Bean
 	public Movie movieObj (){
 		return new Movie();
 	}
-	
+
+//	Actor Beans
 	@Bean
 	public Actor actorObj (){
 		return new Actor("ajith","male",39);
