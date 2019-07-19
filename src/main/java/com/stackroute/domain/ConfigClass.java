@@ -5,10 +5,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
+//bean configuration class
 @Configuration
 public class ConfigClass {
 
-//	Movie Beans
+//	Movie Beans creation
 	@Bean(name = {"movieObj1", "movieObject"})
 	public Movie movieBean (){
 		Movie movie = new Movie(actorObj1());
@@ -28,7 +29,7 @@ public class ConfigClass {
 		return movie;
 	}
 	
-//	Actor Beans
+//	Actor Beans creation
 	@Bean
 	public Actor actorObj1 (){
 		return new Actor("sivakarthikeyan","male",30);
