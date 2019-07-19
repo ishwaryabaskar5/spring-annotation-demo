@@ -17,7 +17,10 @@ import org.springframework.core.io.FileSystemResource;
 public class Main {
 	public static void main( String[] args )
 	{
+//		ApplicationContext object
 		ApplicationContext context = new AnnotationConfigApplicationContext("com.stackroute.domain");
+		
+//		BeanLifecycleDemoBean object
 		BeanLifecycleDemoBean beanLifecycleDemoBean =  (BeanLifecycleDemoBean) context.getBean("beanLifeCycle");
 	}
 	
