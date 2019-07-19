@@ -16,11 +16,14 @@ import org.springframework.core.io.FileSystemResource;
 public class Main {
 	public static void main( String[] args )
 	{
+//		ApplicationContext container object
 		ApplicationContext context = new AnnotationConfigApplicationContext("com.stackroute.domain");
 
+//		movie object
 		Movie movie = context.getBean("movieObj",Movie.class);
 		movie.display();
 		
+//		movie object
 		Movie movie1 = context.getBean("movieObj1",Movie.class);
 		movie1.display();
 	}

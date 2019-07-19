@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Scope;
 public class ConfigClass {
 
 //	Movie Beans
-
 	@Bean
 	public Movie movieObj (){
 		return new Movie(actor());
@@ -21,6 +20,7 @@ public class ConfigClass {
 		return new Movie(actorObj());
 	}
 	
+//	Actor beans
 	@Bean
 	public Actor actorObj (){
 		return new Actor("ajith","male",39);
